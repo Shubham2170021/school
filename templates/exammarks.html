@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="bg" style="background-image: url('https://img5.goodfon.com/original/1366x768/f/e1/tsvet-forma-fon-230.jpg');" >
+<div class="add" >
+    <h2>Enter Your Roll No and Exam code</h2>
+<form action="/marks"  method="POST">
+    <label for="rno"><b>Roll No:</b></label>
+    <input type="text" name="rno"><br>
+    <label for="examcode"><b>Exam code:</b></label>
+    <input type="text" name="ecode">
+    <input type="submit" value="submit" class="btn btn-primary">
+</form>
+</div>
+</div>
+
+
+
+{% endblock %}

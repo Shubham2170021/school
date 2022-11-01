@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="bg" style="background-image: url('https://img5.goodfon.com/original/1366x768/f/e1/tsvet-forma-fon-230.jpg');">
+    <div class="add" >
+        <h2>Enter details of student</h2>
+        <form method='POST' action='/viewstudent'>
+                <label for="roll_no"><b>Roll No:</b></label><br>
+                <input  name='rno' type='number'><br>
+                <label for="fname"><b>First Name:</b></label><br>
+                <input  name='fname' type='TEXT' ><br>
+                <label for="lname"><b>Last Name:</b></label><br>
+                <input  name='lname' type='TEXT' ><br>
+                <label for="dob"><b>DOB(YYYY/MM/DD)</b></label><br>
+                <input  name='dob' type='date'><br><br>
+        <p>When you're ready, click this button:</p>
+        <p><input class="btn btn-primary" value='Do it!' type='SUBMIT'></p><br>
+        </form>
+        <a class="btn btn-outline-dark" href="/viewallstudent" role="button">View Student</a>
+        <a class="btn btn-outline-dark" href="/searchrollno" role="button">Search Student by Roll no</a>
+</div>
+</div>
+
+{% endblock %}

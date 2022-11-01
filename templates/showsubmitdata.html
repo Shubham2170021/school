@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="bg" style="background-color: #8198c0;">
+    <div class="add" >
+<h2>well done!</h2>
+
+<p>You submitted the following data:</p>
+<table>
+<tr><td>Roll no:</td><td>{{ rno }}</td></tr>
+<tr><td>First name:</td><td>{{ fname }}</td></tr>
+<tr><td>Last name:</td><td>{{ lname }}</td></tr>
+<tr><td>DOB:</td><td>{{ dob }}</td></tr>
+</table>
+    </div>
+</div>
+{% endblock %}

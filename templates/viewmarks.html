@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>well done!</h2>
+
+<p>You submitted the following data:</p>
+<table>
+<tr><td>Roll no:</td><td>{{ rno }}</td></tr>
+<tr><td>Exam code:</td><td>{{ ecode }}</td></tr>
+<tr><td>Paper code:</td><td>{{ pcode }}</td></tr>
+<tr><td>Total marks:</td><td>{{ tmarks }}</td></tr>
+<tr><td>Obtain marks:</td><td>{{ omarks }}</td></tr>
+
+</table>
+
+{% endblock %}

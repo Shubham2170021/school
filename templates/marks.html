@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="bg" style="background-color: #8198c0;">
+    <div class="addmarks" >
+    {% if exam_title %}  
+<h2>{{exam_title}} marks</h2>
+    {% endif %}
+    {% if title %}  
+    <h2>{{title}}</h2>
+        {% endif %}
+<table>
+    <tr>
+        {% for row_title in the_row_titles %}
+            <th>{{row_title}}</th>
+        {% endfor %}
+    </tr>
+    {% for log_row in the_data %}
+        <tr>
+            {% for item in log_row %}
+                <td>{{item}}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+{% if obtain_marks %}
+<h5>Total marks:{{obtain_marks}}/{{total_marks}}</h5>
+<h5>percentage :{{percentage}}%</h5>
+{% endif %}
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="bg" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');" >
+    <h1 style="color: white;">Welcome,{{title}}</h1>
+    <h3 style="color: #fff;" >Please choose your optaion</h3>
+    <div class="Button" >
+        <a class="btn btn-outline-light" href="/addstudent" role="button">Add Student</a>
+        <a class="btn btn-outline-light" href="/viewallstudent" role="button">View Student</a>
+        <a class="btn btn-outline-light" href="/searchrollno" role="button">Search Student by Roll no</a><br><br>
+        <a class="btn btn-outline-light" href="/entermarks" role="button">Enter marks</a>
+        <a class="btn btn-outline-light" href="/viewmarks" role="button">View marks</a>
+        <a class="btn btn-outline-light" href="/exammarks" role="button">View indivisual marks</a>
+
+    </div>
+</div>
+
+{% endblock %}

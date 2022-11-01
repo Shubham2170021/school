@@ -1,0 +1,19 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="bg" style="background-image: url('https://img5.goodfon.com/original/1366x768/f/e1/tsvet-forma-fon-230.jpg');">
+    <div class="add" >
+<h2>Welcom to Roll no search page!</h2>
+<form method='POST' action='/viewrollno'>
+
+<p>Enter roll no of student:</p>
+<label for="Roll_no"><b>Roll no:</b></label>
+<input name='rno' type='number' width='60'>
+<p>When you're ready, click this button:</p>
+<p><input value='Do it!' type='SUBMIT'></p>
+</form>
+    </div>
+</div>
+
+{% endblock %}
